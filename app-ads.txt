@@ -1,4 +1,7 @@
 #admob
+google.com, pub-9196644116084994, DIRECT, f08c47fec0942fa0
+
+#admob
 google.com, pub-8713069554470817, DIRECT, f08c47fec0942fa0
 #applovin
 applovin.com, c667868097fde5e411fade707e1b0c52, DIRECT
