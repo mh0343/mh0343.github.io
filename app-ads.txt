@@ -4,6 +4,11 @@ google.com, pub-9196644116084994, DIRECT, f08c47fec0942fa0
 #facebook
 facebook.com, 1460117025360393, DIRECT, f08c47fec0942fa0
 
+#Pangle
+pangleglobal.com, 5014327, DIRECT
+
+pubmatic.com, 161490, RESELLER, 5d62403b186f2ace
+
 #admob 
 google.com, pub-8713069554470817, DIRECT, f08c47fec0942fa0
 
