@@ -2,7 +2,7 @@
 google.com, pub-9196644116084994, DIRECT, f08c47fec0942fa0
 
 #facebook
-facebook.com, 1460117025360393, DIRECT, f08c47fec0942fa0
+facebook.com, 777214662871382, RESELLER, c3e20eee3f780d68
 
 #Pangle
 pangleglobal.com, 5014327, DIRECT
