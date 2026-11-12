@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>마인보카에서 같이 공부해요</title>
+<meta name="description" content="친구가 마인보카에서 기다려요. 앱에서 열면 바로 친구 프로필이 떠요.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="마인보카">
+<meta property="og:title" content="마인보카에서 같이 공부해요">
+<meta property="og:description" content="친구가 마인보카에서 기다려요">
+<meta property="og:image" content="../img/og.png">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FF7A1A">
+<link rel="icon" href="../img/leo.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="../landing.css">
+</head>
+<body>
+<!--
+  친구 링크 (11/12 · 앱 Friends.inviteLink): https://<도메인>/u/?c=아이디
+  - 앱이 깔린 폰: 안드로이드 App Links 가 이 주소를 앱으로 바로 연다 (이 화면은 안 뜸 — .well-known/assetlinks.json).
+  - 앱이 없는 폰 · 카카오톡 같은 앱 안 브라우저: 이 화면 → [앱에서 열기](intent:// — 깔려 있으면 앱, 없으면 Play) · [Google Play에서 받기]
+    Play 주소에 referrer 'mv_invite=아이디' → 설치한 앱이 첫 실행 때 읽어 로그인 뒤 서로 팔로우 (InviteReferrer).
+-->
+<main class="invite">
+  <img class="leo pixel" src="../img/leo.png" alt="" width="600" height="600">
+  <h1>친구가 마인보카에서<br>기다려요</h1>
+  <div class="code" id="code"></div>
+  <div class="actions">
+    <a class="btn" id="open" href="#">마인보카에서 열기</a>
+    <a class="btn ghost" id="play" href="https://play.google.com/store/apps/details?id=com.xioncompany.requiredenglish">Google Play에서 받기</a>
+  </div>
+  <a href="../"><img class="brand pixel" src="../img/brand.png" alt="마인보카" width="134" height="34"></a>
+</main>
+<script>
+(function () {
+  var PKG = 'com.xioncompany.requiredenglish';
+  var raw = new URLSearchParams(location.search).get('c') || '';
+  var code = raw.trim().replace(/^@/, '').toUpperCase();
+  if (!/^[A-Z0-9]{6,12}$/.test(code)) code = '';
+  var play = 'https://play.google.com/store/apps/details?id=' + PKG +
+    (code ? '&referrer=' + encodeURIComponent('mv_invite=' + code) : '');
+  document.getElementById('play').href = play;
+  var open = document.getElementById('open');
+  if (code) document.getElementById('code').textContent = '@' + code;
+  if (/Android/i.test(navigator.userAgent)) {
+    // 앱이 있으면 앱의 친구 링크로 · 없으면 Play (browser_fallback_url)
+    open.href = 'intent://' + location.host + '/u/?c=' + code +
+      '#Intent;scheme=https;package=' + PKG + ';S.browser_fallback_url=' + encodeURIComponent(play) + ';end';
+  } else {
+    open.style.display = 'none';
+    document.getElementById('play').className = 'btn';   // 안드로이드가 아니면 Play 단추가 주 단추
+  }
+})();
+</script>
+</body>
+</html>
