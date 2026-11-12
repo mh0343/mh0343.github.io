@@ -3,34 +3,97 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>마인보카</title>
-<meta name="description" content="문장으로 배우는 영어 코스 앱, 마인보카">
-<link rel="stylesheet" href="style.css">
+<title>마인보카 : 문장으로 배우는 영어 코스</title>
+<meta name="description" content="짧은 문장을 듣고, 고르고, 말하며 하늘 길을 한 칸씩 올라요. 내 캐릭터를 꾸미고 친구와 함께 공부하는 영어 앱, 마인보카.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="마인보카">
+<meta property="og:title" content="마인보카 : 문장으로 배우는 영어 코스">
+<meta property="og:description" content="매일 한 판, 한 칸씩 오르는 영어 공부">
+<meta property="og:image" content="img/og.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="theme-color" content="#FF7A1A">
+<link rel="icon" href="img/leo.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="landing.css">
 </head>
 <body>
-<header class="top"><nav>
-  <a class="brand" href="./">마인보카</a>
-  <a href="privacy.html">개인정보처리방침</a>
-  <a href="terms.html">이용약관</a>
-  <a href="delete-account.html">계정 삭제</a>
-</nav></header>
+<header class="bar"><div class="wrap">
+  <a class="logo" href="./"><img class="pixel" src="img/brand.png" alt="마인보카" width="134" height="34"></a>
+  <a class="btn small play" href="https://play.google.com/store/apps/details?id=com.xioncompany.requiredenglish">앱 받기</a>
+</div></header>
+
 <main>
-  <h1>마인보카</h1>
-  <p>짧은 문장으로 매일 조금씩 배우는 영어 코스 앱이에요. 듣고, 고르고, 말하면서 레벨을 올리고, 매주 리그에서 다른 학습자와 함께 달려요.</p>
-  <div class="box">
-    <h3>무엇을 할 수 있나요</h3>
-    <ul>
-      <li>단계별 문장 코스와 복습</li>
-      <li>연속 학습 기록 · 레벨 · 주간 리그</li>
-      <li>골드로 꾸미는 나만의 아바타</li>
-    </ul>
-  </div>
-  <p><a class="btn" href="https://play.google.com/store/apps/details?id=com.xioncompany.requiredenglish">Google Play에서 보기</a></p>
-  <h2>문의</h2>
-  <p>이메일: <a href="mailto:help032279@gmail.com">help032279@gmail.com</a></p>
+  <section class="hero"><div class="wrap">
+    <div class="text">
+      <h1>문장으로 오르는<br><em>영어 하늘 길</em></h1>
+      <p class="lead">짧은 문장을 듣고, 고르고, 말하면서<br>하루 한 판씩 위로 올라가요.</p>
+      <a class="btn play" href="https://play.google.com/store/apps/details?id=com.xioncompany.requiredenglish">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.6v18.8c0 .5.5.8.9.6l16.3-9.4c.4-.2.4-.8 0-1L4.9 2c-.4-.2-.9.1-.9.6z"/></svg>
+        Google Play에서 받기
+      </a>
+    </div>
+    <div class="art">
+      <img class="hero-leo pixel" src="img/leo.png" alt="마인보카 마스코트 레오" width="600" height="600">
+    </div>
+  </div></section>
+
+  <section class="feature"><div class="wrap">
+    <div class="text">
+      <span class="tag">문장 코스</span>
+      <h2>매일 한 판,<br>한 칸씩 위로</h2>
+      <p>한 판은 몇 분이면 끝나요. 판을 마칠 때마다 발판을 하나씩 밟고 올라가요.</p>
+      <ul>
+        <li>쉬운 문장부터 단계별로</li>
+        <li>듣기 · 말하기 · 고르기를 고루</li>
+        <li>틀린 문장은 알아서 다시</li>
+      </ul>
+    </div>
+    <img class="shot" src="img/shot_stage.webp" alt="" width="540" height="1152" loading="lazy">
+  </div></section>
+
+  <section class="feature flip"><div class="wrap">
+    <div class="text">
+      <span class="tag">캐릭터 꾸미기</span>
+      <h2>모은 골드로<br>나만의 캐릭터를</h2>
+      <p>공부하며 모은 골드로 헤어 · 옷 · 신발을 골라 입어요. 꾸민 모습은 친구와 리그에서도 보여요.</p>
+      <ul>
+        <li>헤어 · 얼굴 · 옷 · 모자</li>
+        <li>헤어 염색 · 무대 배경</li>
+        <li>내 코디 저장</li>
+      </ul>
+    </div>
+    <img class="shot" src="img/shot_avatar.webp" alt="마인보카 캐릭터 꾸미기 화면" width="540" height="1152" loading="lazy">
+  </div></section>
+
+  <section class="feature"><div class="wrap">
+    <div class="text">
+      <span class="tag">친구 · 리그</span>
+      <h2>혼자보다<br>같이 하면 오래 가요</h2>
+      <p>매주 리그에서 순위를 다투고, 친구와 함께 연속 학습을 이어 가요.</p>
+      <ul>
+        <li>주간 리그 · 티어 승급</li>
+        <li>QR 하나로 친구 추가</li>
+        <li>함께 연속 · 좋아요 · 선물</li>
+      </ul>
+    </div>
+    <img class="shot" src="img/shot_profile.webp" alt="마인보카 프로필 화면" width="540" height="1152" loading="lazy">
+  </div></section>
+
+  <section class="cta"><div class="wrap">
+    <h2>오늘부터 한 칸씩</h2>
+    <a class="btn play" href="https://play.google.com/store/apps/details?id=com.xioncompany.requiredenglish">Google Play에서 받기</a>
+    <img class="leo pixel" src="img/leo.png" alt="" width="600" height="600" loading="lazy">
+  </div></section>
 </main>
-<footer>
-  © Andra · <a href="privacy.html">개인정보처리방침</a> · <a href="terms.html">이용약관</a> · <a href="delete-account.html">계정 삭제</a>
-</footer>
+
+<footer class="foot"><div class="wrap">
+  <nav>
+    <a href="terms.html">이용약관</a>
+    <a href="privacy.html">개인정보처리방침</a>
+    <a href="delete-account.html">계정 삭제</a>
+  </nav>
+  <p>운영: Andra · 문의 <a href="mailto:help032279@gmail.com">help032279@gmail.com</a></p>
+  <p>© 2026 마인보카</p>
+</div></footer>
 </body>
 </html>
