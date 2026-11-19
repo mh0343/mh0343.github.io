@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["22RWG7XA29.com.xioncompany.englishwords"],
+        "components": [
+          { "/": "/u", "comment": "친구 링크 /u?c=아이디" },
+          { "/": "/u/*", "comment": "친구 링크 /u/?c=아이디" }
+        ]
+      }
+    ]
+  }
+}
